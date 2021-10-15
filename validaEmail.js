@@ -19,10 +19,10 @@ var boolEmail = validaEmail(email)
 
 function exibeResultadoValidacao(){
 
-    if (boolEmail == true) {
-        return document.write("<h3> Email inválido!</h3> ");
+    if (validaEmail(email) == true) {
+        return document.write("<h3> Email válido!</h3>");
     } else {
-        return document.write("<h3> Email válido!</h3> ");
+        return document.write("<h3> Email inválido!</h3> ");
     }
 
 }
