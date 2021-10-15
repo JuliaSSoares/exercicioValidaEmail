@@ -12,11 +12,14 @@ function validaEmail(email){
     }
 }
 
+var resultado = validaEmail(email);
 
 function exibeResultadoValidacao(resultado){
 
     if (validaEmail(resultado) == true){
-        return document.write("<p>")
+        return document.write("<h3> Email válido!</h3> ");
+    } else {
+        return document.write("<h3> Email inválido!</h3> ");
     }
 
 }
