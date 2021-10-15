@@ -1,25 +1,28 @@
 
-var email = prompt("Digite o e-mail :)")
+var email = prompt("Digite o e-mail :)");
+
+exibeResultadoValidacao();
 
 
 function validaEmail(email){
 
     var verificacao = email.indexOf("@");
-    if ( verificacao < 0){
-       return false
+
+    if (verificacao < 0) {
+        return false
     } else {
         return true
     }
 }
 
-var resultado = validaEmail(email);
+var boolEmail = validaEmail(email)
 
-function exibeResultadoValidacao(resultado){
+function exibeResultadoValidacao(){
 
-    if (validaEmail(resultado) == true){
-        return document.write("<h3> Email válido!</h3> ");
-    } else {
+    if (boolEmail == true) {
         return document.write("<h3> Email inválido!</h3> ");
+    } else {
+        return document.write("<h3> Email válido!</h3> ");
     }
 
 }
