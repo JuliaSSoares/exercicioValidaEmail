@@ -15,7 +15,6 @@ function validaEmail(email){
     }
 }
 
-var boolEmail = validaEmail(email)
 
 function exibeResultadoValidacao(){
 
